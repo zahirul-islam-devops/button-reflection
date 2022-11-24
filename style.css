@@ -1,0 +1,64 @@
+
+
+.partners__btn {
+    text-align: center;
+}
+
+
+.btn__primary {
+    position: relative;
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    background: transparent;
+    text-decoration: none !important;
+    border: 1px solid;
+    border-color: transparent;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn__primary:hover {
+    /* color: #ffffff; */
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+
+.btn__primary::before {
+    position: absolute;
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: -webkit-transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1),
+        -webkit-transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    -moz-transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.btn__primary:hover::before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+}
